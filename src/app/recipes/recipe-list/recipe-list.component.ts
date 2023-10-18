@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Recipe } from '../recipe.model';
+import { Receita } from '../recipe.model';
 
 @Component({
   selector: 'app-recipe-list',
@@ -8,8 +8,8 @@ import { Recipe } from '../recipe.model';
 })
 export class RecipeListComponent implements OnInit {
   
-  recipes: Recipe[] = [
-    new Recipe(
+  receitas: Receita[] = [
+    new Receita(
       "A teste recipe", 
       "Isso é um teste", 
       "https://ciadereceitas.com.br/wp-content/uploads/2022/09/receita-de-bem-casado.png")
@@ -20,7 +20,7 @@ export class RecipeListComponent implements OnInit {
   }
   
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    
   }
 
 }

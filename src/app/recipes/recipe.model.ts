@@ -1,4 +1,4 @@
-export class Recipe {
+export class Receita {
 
     public name: string;
     public description: string;
